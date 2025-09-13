@@ -1,3 +1,5 @@
+"use client";
+
 import "./Progress.scss";
 
 export default function Progress({progress}:any){

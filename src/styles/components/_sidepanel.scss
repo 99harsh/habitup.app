@@ -16,11 +16,13 @@
         .hbup-menu-item{
             padding: .5rem;
             color: #727272;
+            text-decoration: none;
         }
         .hbup-menu-active{
             background-color: $bg-yellow-dark;
             color: $text-white;
             border-radius: .312rem;
+
         }
     }
 }

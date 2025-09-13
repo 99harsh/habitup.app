@@ -1,0 +1,22 @@
+.hbup-mood-container{
+    .hbup-weekly-stats{
+        position: relative;
+        width: 32.875rem;
+        .hbup-emoj-container{
+            justify-items: center;
+        }
+        .hbup-week-cloud{
+            position: absolute;
+            top: -2.25rem;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+
+    .hbup-mood-section{
+        .hbup-submit-btn{
+            max-width: 50%;
+        }
+    }
+}

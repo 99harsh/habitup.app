@@ -1,3 +1,5 @@
+"use client";
+
 import DashboardHeader from "@/components/layout/DashboardHeader";
 import SidePanel from "@/components/layout/Sidepanel";
 import "./layout.module.scss";

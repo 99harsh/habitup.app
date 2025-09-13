@@ -1,0 +1,13 @@
+@use "@/styles/abstracts/_variables.scss" as *;
+
+.hbup-datepicker-container{
+    .hbup-selected-date{
+        color: $text-yellow;
+    }
+    .hbup-arrow-btn{
+        background-color: rgba(255, 181, 76, 0.13);
+        border: none;
+        border-radius: .312rem;
+         cursor: pointer;
+    }
+}
