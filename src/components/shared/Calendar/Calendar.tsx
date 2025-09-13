@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import "./Calendar.scss";
 import {Calendar as RCalendar} from "react-calendar";
@@ -22,7 +24,11 @@ export default function Calendar() {
     const formatDate = (date:any) => date.toISOString().split("T")[0];
     return (
         <RCalendar
-            onChange={setValue}
+            onChange={(value) => {
+                if (value instanceof Date) {
+                    setValue(value);
+                }
+            }}
             value={value}
             tileClassName={({ date }) => {
                 const dateStr = formatDate(date);

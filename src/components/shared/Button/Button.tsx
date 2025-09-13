@@ -1,9 +1,13 @@
 import "./Button.scss";
 
-export const Button = () => {
+interface IButton{
+    buttonName: string
+}
+
+export const Button = ({buttonName}: IButton) => {
     return (
         <button className="hbup-primary-btn">
-            Sign in
+            {buttonName}
         </button>
     )
 }

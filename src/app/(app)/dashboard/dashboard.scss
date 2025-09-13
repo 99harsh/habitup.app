@@ -61,4 +61,24 @@ $stats-primary-text: rgba(142, 155, 186, 1);
         }
     }
 
+    .hbup-ai-container{
+        .hbup-ai-heading{
+            color:rgba(27, 37, 89, 1);
+        }
+
+        .hbup-ai-subheading{
+            color: rgba(113, 128, 150, 1);
+        }
+    }
+    .hbup-aisummary-container{
+        .hbup-aisummary-heading{
+            color: rgba(27, 37, 89, 1);
+            padding-left: 1.25rem;
+        }
+
+        .hbup-aisummary-list{
+            color: rgba(27, 37, 89, 1);
+        }
+    }
+
 }

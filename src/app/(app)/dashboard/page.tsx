@@ -1,11 +1,13 @@
 import "./dashboard.scss";
 import Card from "@/components/shared/Card/Card";
-import { Flame, Goal, Heart, Notebook, Trophy } from "lucide-react";
+import { Flame, Goal, Heart, Notebook, Sparkles, Trophy } from "lucide-react";
 import TaskList from "@/components/shared/TaskList/TaskList";
 import LeaderboardCard from "@/components/shared/LeaderboardCard/LeaderboardCard";
 import Progress from "@/components/shared/Progress/Progress";
 import Checkbox from "@/components/shared/Checkbox/Checkbox";
 import Calendar from "@/components/shared/Calendar/Calendar";
+import Input from "@/components/shared/Input/Input";
+import { Button } from "@/components/shared/Button/Button";
 
 export default function Dashboard() {
     return (
@@ -98,7 +100,7 @@ export default function Dashboard() {
                     </div>
                     <div className="hbup-task-container flex flex-col gap-4 mt-4">
                         <div className="hbup-task-item flex align-items-center gap-2">
-                            <Checkbox isCircle={true} checked={true}/>
+                            <Checkbox isCircle={true} checked={true} />
                             <p className="m-0 font-sm text-primary font-500 hbup-task-completed"> Daily Login</p>
                         </div>
                         <div className="hbup-task-item flex align-items-center gap-2">
@@ -117,13 +119,43 @@ export default function Dashboard() {
                             <Checkbox isCircle={true} />
                             <p className="m-0 font-sm text-primary font-500 hbup-task"> Daily Journal</p>
                         </div>
-                        
+
                     </div>
                 </Card>
                 <Card className="flex-1">
                     <h3 className="hbup-layout-heading mt-0 font-md font-600">Calendar</h3>
                     <div className="hbup-calendar-container">
-                        <Calendar />
+                        {/* <Calendar /> */}
+                    </div>
+                </Card>
+            </div>
+            <div className="hbup-layout-section flex mt-4">
+                <Card className="flex-1">
+                    <div className="hbup-ai-container">
+                        <h3 className="flex align-items-center gap-2 hbup-ai-heading justify-content-center font-xl mt-0 mb-2">
+                            <Sparkles color="rgba(254, 199, 120, 1)" />
+                            AI Summary
+                        </h3>
+                        <p className="font-400 font-lg m-0 text-center hbup-ai-subheading">Create AI summary from your recent reflection </p>
+                    </div>
+                    <div className="hbup-aiform-container flex gap-3 align-items-center mt-4">
+                        <div className="flex-1">
+                            <Input type="text" placeholder="Passkey - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+                        </div>
+                        <div>
+                            <Button buttonName="Generate"/>
+                        </div>
+                    </div>
+                    <div className="hbup-aisummary-container">
+                        <p className="hbup-aisummary-heading font-md">
+                        Artificial Intelligence (AI) offers numerous advantages and has the potential to revolutionize various aspects of our lives. Here are some key advantages of AI:
+                        </p>
+                        <ol className="hbup-aisummary-list m-0 flex flex-col gap-6">
+                            <li className="font-md font-400">Automation: AI can automate repetitive and mundane tasks, saving time and effort for humans. It can handle large volumes of data, perform complex calculations, and execute tasks with precision and consistency. This automation leads to increased productivity and efficiency in various industries.</li>
+                            <li className="font-md font-400">Decision-making: AI systems can analyze vast amounts of data, identify patterns, and make informed decisions based on that analysis. This ability is particularly useful in complex scenarios where humans may struggle to process large datasets or where quick and accurate decisions are crucial.</li>
+                            <li className="font-md font-400">Improved accuracy: AI algorithms can achieve high levels of accuracy and precision in tasks such as image recognition, natural language processing, and data analysis. They can eliminate human errors caused by fatigue, distractions, or bias, leading to more reliable and consistent results.</li>
+                            <li className="font-md font-400">Continuous operation: AI systems can work tirelessly without the need for breaks, resulting in uninterrupted 24/7 operations. This capability is especially beneficial in applications like customer support chatbots, manufacturing processes, and surveillance systems.</li>
+                        </ol>
                     </div>
                 </Card>
             </div>

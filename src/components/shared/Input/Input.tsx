@@ -5,12 +5,12 @@ import "./Input.scss";
 import { Eye, EyeOff } from "lucide-react";
 
 
-export default function Input({ type, placeholder }: { type: string; placeholder: string }) {
+export default function Input({ type, placeholder, containerClass, className }: { type: string; placeholder: string, containerClass?:string, className?: string }) {
     const [showPassword, setShowPassword] = useState(false);
     return (
         <>
             {type === "password" ? (
-                <div className="hbup-input-container hbup-password-container flex">
+                <div className={`hbup-input-container hbup-password-container flex ${containerClass}`}>
                     <input className="hbup-input-box" type={showPassword ? "text" : "password"} placeholder={placeholder} />
                     <button type="button" onClick={() => setShowPassword(!showPassword)}
                         className="hbup-password-toggle flex align-items-center">
@@ -18,7 +18,7 @@ export default function Input({ type, placeholder }: { type: string; placeholder
                     </button>
                 </div>
             ) : (
-                <div className="hbup-input-container">
+                <div className={`hbup-input-container ${containerClass}`}>
                     <input className="hbup-input-box" type={type} placeholder={placeholder} />
                 </div>
             )}

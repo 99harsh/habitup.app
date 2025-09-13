@@ -38,7 +38,7 @@ export default function Login() {
                     </div>
                     <div className="hbup-form-section hbup-signin-container mb-4">
                         <div className="hbup-btn-container m-auto">
-                            <Button />
+                            <Button buttonName="Login" />
                         </div>
                     </div>
                     <div className="hbup-form-section hbup-newaccount-container mb-4 text-center">
