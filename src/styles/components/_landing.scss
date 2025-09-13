@@ -1,0 +1,540 @@
+@use "@/styles/abstracts/variables" as *;
+
+.hbup-landing-container {
+    background-color: $yellow-bg-light;
+    padding: 2rem 3rem;
+
+    .hbup-landing-section {
+        width: calc(100% - 12rem);
+        margin: auto;
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            width: 100%;
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            width: calc(100% - 6rem);
+        }
+    }
+
+    .hbup-privacy-container {
+        margin-top: 2rem;
+
+        .hbup-privacy-section {
+
+            .hbup-privacy-illustrations {
+                width: 70%;
+                height: 70%;
+            }
+
+            .hbup-privacy-heading-container {
+                .hbup-privacy-heading {
+                    font-size: $font-6xl;
+                }
+            }
+
+            .hbup-privacy-subheading-container {
+                .hbup-privacy-subheading {
+                    color: #989898;
+                    font-weight: $font-weight-300;
+                    font-size: $font-xl;
+                }
+            }
+
+            .hbup-register-btn-container {
+                .hbup-register-btn {
+                    background-color: #FFB54C;
+                    padding: 1rem 2rem;
+                    border: none;
+                    color: $text-white;
+                    cursor: pointer;
+                    font-size: $font-md;
+                    border-radius: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .hbup-story-container {
+        padding-bottom: 0px;
+
+        .hbup-story-section {
+            .hbup-notepad-illustrations {
+                width: 100%;
+                height: 100%;
+            }
+
+            .hbup-story-heading-container {
+                .hbup-story-heading {
+                    font-size: $font-6xl;
+                }
+            }
+
+            .hbup-story-subheading-container {
+                margin: 2rem 0px;
+
+                .hbup-story-subheading {
+                    color: $text-grey-light;
+                    font-weight: $font-weight-600;
+                    font-size: $font-2xl;
+                }
+            }
+
+            .hbup-notepad-container {
+                background-color: #FFC2CE;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                max-width: 350px;
+                font-family: var(--font-intruding-cat), sans-serif;
+                font-weight: 300;
+                font-size: $font-xl;
+
+                .hbup-notepad-heading {
+                    line-height: 1.4;
+                }
+
+                .hbup-writing-text {
+                    color: #A84D5F;
+                }
+            }
+        }
+    }
+
+    .hbup-toolkit-container {
+        padding-top: 0;
+        // margin-top: -4rem;
+
+        .hbup-toolkit-heading {
+            font-size: $font-6xl;
+        }
+
+        .hbup-toolkit-subheading {
+            font-family: var(--font-intruding-cat);
+            font-size: $font-3xl;
+        }
+
+        .hbup-toolkit-card-container {
+            width: 80%;
+            margin: 2rem auto;
+
+            .hbup-toolkit-card {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border-radius: .312rem;
+            }
+
+            .hbup-card-pink {
+                background-color: #FFBDF2;
+            }
+
+            .hbup-card-blue {
+                background-color: #80CAFF;
+            }
+
+            .hbup-card-violet {
+                background-color: #D9B8FF;
+            }
+
+            .hbup-card-green {
+                background-color: #85E0A3;
+            }
+
+            .hbup-card-lightblue {
+                background-color: #75D7F0;
+            }
+
+            .hbup-card-yellow {
+                background-color: #FBD767;
+            }
+        }
+    }
+
+    .hbup-leaderboard-container {
+        .hbup-leaderboard-headings-container {
+            .hbup-leaderboard-heading {
+                font-size: $font-6xl;
+            }
+
+            .hbup-leaderboard-subheading {
+                font-family: var(--font-intruding-cat);
+                font-size: $font-3xl;
+            }
+        }
+
+        .hbup-top-users-container {
+            .hbup-user-2 {
+                .hbup-user-name {
+                    color: rgb(88, 210, 128);
+                    font-size: $font-xl;
+                    font-weight: $font-weight-500;
+                }
+
+                .hbup-user-xp {
+                    color: rgb(88, 210, 128);
+                    font-weight: $font-weight-500;
+                }
+            }
+
+            .hbup-user-1 {
+                .hbup-user-name {
+                    color: rgba(255, 181, 76, 1);
+                    font-size: $font-2xl;
+                    font-weight: $font-weight-500;
+                }
+
+                .hbup-user-xp {
+                    color: rgba(255, 181, 76, 1);
+                    font-weight: $font-weight-500;
+                }
+            }
+
+            .hbup-user-3 {
+                .hbup-user-name {
+                    color: rgba(117, 215, 240, 1);
+                    font-size: $font-xl;
+                    font-weight: $font-weight-500;
+                }
+
+                .hbup-user-xp {
+                    color: rgba(117, 215, 240, 1);
+                    font-weight: $font-weight-500;
+                }
+            }
+        }
+
+        .hbup-runup-user-container {
+            width: 80%;
+            margin: auto;
+
+            .hbup-runup-card {
+                max-width: 28rem;
+                background-color: $text-white;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                border-radius: .5rem;
+
+                .hbup-user-name {
+                    font-weight: $font-weight-500;
+                }
+
+                .hbup-user-xp {
+                    font-weight: $font-weight-500;
+                }
+            }
+
+            .hbup-runup-card-2 {
+                margin: 3rem 0 3rem -5rem;
+            }
+
+            .hbup-runup-card-3 {
+                margin: 0 0 0 -2.5rem;
+            }
+
+            .hbup-runup-card-4 {
+                margin: 3rem 0 0 -1rem;
+            }
+
+            .hbup-runup-card-5 {
+                margin: 2rem 0 2rem 2.5rem;
+            }
+
+
+
+
+        }
+    }
+
+    .hbup-goals-tracking-container {
+        padding-bottom: 0;
+
+        .hbup-goals-headings-container {
+            .hbup-goals-heading {
+                font-size: $font-6xl;
+            }
+
+            .hbup-goals-subheading {
+                font-family: var(--font-intruding-cat);
+                font-size: $font-3xl;
+            }
+        }
+
+        .hbup-task-section-container {
+            padding-top: 4rem;
+
+            .hbup-task-section {
+                .hbup-task-illustration {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+    .hbup-mood-tracking-container {
+        padding-top: 0;
+
+        .hbup-mood-headings-container {
+            .hbup-mood-heading {
+                font-size: $font-6xl;
+            }
+
+            .hbup-mood-subheading {
+                font-size: $font-3xl;
+                font-family: var(--font-intruding-cat);
+            }
+        }
+
+        .hbup-mood-illustration-container {
+            .hbup-mood-illustration {
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+
+    .hbup-journey-map-container {
+        margin: 3rem auto;
+
+        .hbup-journey-headings-container {
+            .hbup-journey-heading {
+                font-size: $font-6xl;
+            }
+        }
+
+        .hbup-mindful-container {
+            .hbup-mindful-heading-container {
+                position: relative;
+                background-color: rgba(226, 238, 253, 1);
+                border-radius: 5rem;
+                min-width: 31.2rem;
+
+                .hbup-mindful-asset {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(-53%, 0);
+                }
+
+                .hbup-start-heading {
+                    font-weight: $font-weight-500;
+                    font-size: $font-xl;
+                }
+
+                .hbup-steps-heading {
+                    font-size: $font-4xl;
+                }
+            }
+
+
+        }
+
+        .hbup-card-arrow-container {
+            margin-top: 5rem;
+        }
+
+        .hbup-journal-card-container {
+            .hbup-journal-card {
+                background-color: rgba(226, 238, 253, 1);
+                border-radius: .312rem;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+        }
+    }
+
+    .hbup-contact-container {
+        padding: 6rem 2rem;
+        margin: auto;
+
+        .hbup-contact-section {
+            .hbup-contact-heading {
+                font-size: $font-6xl;
+            }
+
+            .hbup-contact-content,
+            .hbup-contact-email {
+                font-size: $font-xl;
+                font-weight: $font-weight-300;
+            }
+        }
+
+        .hbup-contact-form-container {
+            .hbup-contact-input {
+                min-width: 25rem;
+                border: none;
+                outline: none;
+                border-radius: .312rem;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                &::placeholder {
+                    color: $text-grey;
+                    font-weight: $font-weight-300;
+                }
+            }
+
+            .hbup-contact-textarea {
+                min-height: 15rem;
+            }
+
+
+            .hbup-submit-btn {
+                background-color: rgba(255, 181, 76, 1);
+                color: $text-white;
+                border: none;
+                outline: none;
+                border-radius: .75rem;
+                min-width: 25rem;
+                cursor: pointer;
+                padding: .875rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .hbup-story-container {
+            padding-top: 0;
+
+            .hbup-story-section {
+                padding-left: 0;
+            }
+        }
+
+        .hbup-landing-section {
+            margin: 0;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+
+        .hbup-toolkit-container {
+            margin-top: 4rem;
+
+            .hbup-toolkit-card-container {
+                width: 100%;
+            }
+        }
+
+        .hbup-leaderboard-container {
+            .hbup-runup-user-container {
+                width: 100%;
+
+                .hbup-runup-card {
+                    margin: 1rem;
+                }
+            }
+        }
+
+        .hbup-contact-container {
+            padding-top: 4rem;
+        }
+
+        .hbup-journey-map-container {
+            .hbup-card-arrow-container {
+                margin-top: 3rem;
+            }
+        }
+
+
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        padding: 2rem;
+
+        .hbup-landing-section {
+
+            grid-template-columns: 1fr;
+        }
+
+        .hbup-privacy-container {
+            .hbup-privacy-illustration {
+                display: none;
+            }
+        }
+
+        .hbup-story-container {
+            .hbup-story-section {
+                padding: 0;
+            }
+        }
+
+        .hbup-toolkit-container {
+            margin-top: 3rem;
+
+            .hbup-toolkit-card-container {
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 2rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .hbup-leaderboard-container {
+            .hbup-top-users-container {
+
+                .hbup-user-2,
+                .hbup-user-3 {
+                    img {
+                        width: 80;
+                        height: 80;
+                    }
+                }
+
+                .hbup-user-1 {
+                    img {
+                        width: 100;
+                        height: 100;
+                    }
+                }
+            }
+
+            .hbup-runup-user-container {
+                width: 100%;
+                grid-template-columns: 1fr;
+
+                .hbup-runup-section {
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+
+                .hbup-runup-card {
+                    .hbup-runup-name-container {
+                        img {
+                            width: 40;
+                            height: 40;
+                        }
+                    }
+                }
+
+                .hbup-runup-card-2 {
+                    margin: 2rem 0 2rem 3rem;
+                }
+
+                .hbup-runup-card-3 {
+                    margin: 0;
+                }
+
+
+            }
+        }
+
+        .hbup-journey-map-container {
+
+            .hbup-mindful-container {
+                .hbup-mindful-heading-container {
+                    min-width: 23rem;
+                }
+            }
+
+            .hbup-card-arrow-container {
+                display: none;
+            }
+
+            .hbup-journal-card-container {
+                margin-top: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    }
+}

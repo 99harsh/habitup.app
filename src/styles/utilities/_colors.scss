@@ -1,0 +1,6 @@
+// Using variables from abstracts/_variables.scss
+@use "@/styles/abstracts/variables.scss" as *;
+
+.text-primary{
+    color: $text-black;
+}

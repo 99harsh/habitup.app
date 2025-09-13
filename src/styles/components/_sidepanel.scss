@@ -1,0 +1,26 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-sidepanel-container{
+    min-width: 11rem;
+    background-color: $bg-secondary;
+    height: 100vh;
+    .hbup-logo-container {
+        border-bottom: 1px solid #e4e4e4;
+        .hbup-up-heading {
+            color: $text-yellow;
+        }
+    }
+
+    .hbup-menu-container{
+
+        .hbup-menu-item{
+            padding: .5rem;
+            color: #727272;
+        }
+        .hbup-menu-active{
+            background-color: $bg-yellow-dark;
+            color: $text-white;
+            border-radius: .312rem;
+        }
+    }
+}

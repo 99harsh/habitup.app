@@ -1,0 +1,84 @@
+// Variables from abstracts/_variables.scss
+$space-0: 0;
+$space-1: 0.25rem; // 4px
+$space-2: 0.5rem; // 8px
+$space-3: 0.75rem; // 12px
+$space-4: 1rem; // 16px
+$space-6: 1.5rem; // 24px
+$space-8: 2rem; // 32px
+
+// Margin
+@each $name, $size in (0: $space-0, 1: $space-1, 2: $space-2, 3: $space-3, 4: $space-4, 6: $space-6, 8: $space-8) {
+    .m-#{$name} {
+        margin: $size;
+    }
+
+    .mt-#{$name} {
+        margin-top: $size;
+    }
+
+    .mr-#{$name} {
+        margin-right: $size;
+    }
+
+    .mb-#{$name} {
+        margin-bottom: $size;
+    }
+
+    .ml-#{$name} {
+        margin-left: $size;
+    }
+    
+    .my-#{$name} {
+        margin-top: $size;
+        margin-bottom: $size;
+    }
+
+    .mx-#{$name} {
+        margin-left: $size;
+        margin-right: $size;
+    }
+}
+
+// Padding
+@each $name, $size in (0: $space-0, 1: $space-1, 2: $space-2, 3: $space-3, 4: $space-4, 6: $space-6, 8: $space-8) {
+    .p-#{$name} {
+        padding: $size;
+    }
+
+    .pt-#{$name} {
+        padding-top: $size;
+    }
+
+    .pr-#{$name} {
+        padding-right: $size;
+    }
+
+    .pb-#{$name} {
+        padding-bottom: $size;
+    }
+
+    .pl-#{$name} {
+        padding-left: $size;
+    }
+    
+    .px-#{$name}{
+        padding-left: $size;
+        padding-right: $size;
+    }
+
+    .py-#{$name}{
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+}
+
+@each $name, $size in (0: $space-0, 1: $space-1, 2: $space-2, 3: $space-3, 4: $space-4, 6: $space-6, 8: $space-8) {
+    .gap-#{$name} {
+        gap: $size;
+    }
+}
+
+.m-auto{
+    margin: auto;
+}

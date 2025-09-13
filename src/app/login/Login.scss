@@ -1,0 +1,78 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-auth-container{
+    height: 100vh;
+    background-color: $yellow-bg-light;
+    .hbup-auth-illustration{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .hbup-auth-section{
+        .hbup-logo-container{
+            .hbup-appname{
+                .hbup-up-heading{
+                    color: rgba(255, 181, 76, 1);
+                }
+            }
+        }
+        
+        .hbup-form-container{
+            width: calc(100% - 5rem);
+            
+            .hbup-remember-section{
+                .hbup-remember-text{
+                    color: #70747d;
+                }
+            }
+
+            .hbup-remember-section{
+                .hbup-forgotpass-link{
+                    text-decoration: none;
+                    color: $text-yellow;
+                }
+            }
+
+            .hbup-signin-container{
+                .hbup-btn-container{
+                    max-width: 80%;
+                }
+            }
+
+            .hbup-newaccount-container{
+                .hbup-newaccount-link{
+                    color: $text-yellow;
+                    text-decoration: none;
+                }
+            }
+
+            .hbup-google-container{
+                .hbup-btn-container{
+                    max-width: 80%;
+
+                    .hbup-googlelogin-container{
+                        width: 100%;
+                        border: 1px solid $text-grey-light;
+                        border-radius: .312rem;
+                        padding: .65rem 1rem;
+                        background-color: $text-white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+        .hbup-whylogin-container{
+            width: calc(100% - 5rem);
+            margin: auto;
+        }
+
+        .hbup-copywrite-container{
+            .hbup-copywrite-text{
+                color: rgba(106, 114, 130, 1);
+            }
+        }
+    }
+}

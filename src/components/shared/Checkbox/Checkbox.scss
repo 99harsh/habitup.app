@@ -1,0 +1,29 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+
+.hbup-task-checkbox{
+    position: relative;
+    appearance: none;
+    margin-top: .15rem;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid $bg-yellow-dark;
+    background-color: rgba(255, 179, 70, 0.06);
+    &:checked{
+        background-color: $bg-yellow-dark;
+        &::after{
+            content: "✓";
+            color: $text-white;
+            position: absolute;
+            left: 2px;
+            top: -3px;
+            font-size: 1rem;
+        }
+    }
+
+    &.hbup-checkbox-circle{
+        border-radius: 100%;
+    }
+}

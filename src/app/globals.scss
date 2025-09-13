@@ -1,0 +1,11 @@
+@use "@/styles/main.scss" as *;
+@use "@/styles/abstracts/responsive-mixin.scss" as *;
+
+body {
+    font-family: var(--font-inter), sans-serif;
+    margin: 0;
+}
+
+html {
+    @include fluid-type(320px, 1920px, 2560px, 13px, 18px, 22px);
+}

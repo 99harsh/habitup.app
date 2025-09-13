@@ -1,0 +1,12 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-leaderboard-card{
+    border-radius: .312rem;
+    .hbup-username{
+        color:rgba(79, 79, 79, 1);
+    }
+
+    &.hbup-leadboard-active{
+        background-color: rgba(255, 181, 76, 0.74);
+    }
+}

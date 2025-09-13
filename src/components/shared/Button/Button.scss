@@ -1,0 +1,11 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-primary-btn{
+    background-color: rgba(255, 181, 76, 1);
+    border: none;
+    padding: .65rem 1rem;
+    color: $text-white;
+    border-radius: .312rem;
+    cursor: pointer;
+    width: 100%;
+}

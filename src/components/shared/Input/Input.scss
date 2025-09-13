@@ -1,0 +1,38 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-input-container{
+
+    .hbup-input-box{
+        flex: 1;
+        padding: .65rem 0.5rem;
+        background-color: #FFF;
+        border: 1px solid #e5e5e5;
+        font-size: 1rem;
+        border-radius: .312rem;
+        font-size: $font-sm;
+        font-weight: 400;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        outline: none;
+    
+        &::placeholder{
+            color: $text-grey;
+        }
+    }
+    
+}
+.hbup-password-container{
+    .hbup-input-box{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+    .hbup-password-toggle{  
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-left: 0px;
+        cursor: pointer;
+        outline: none;
+    }
+}

@@ -1,0 +1,18 @@
+@use "@/styles/abstracts/_variables.scss" as *;
+
+.hbup-dashboard-header{
+    background-color: $bg-secondary; 
+    .hbup-notification-container{
+        background-color: rgba(255, 181, 76, 0.46);
+        border-radius: .312rem;
+    }
+    
+    .hbup-profile-name-container{
+        .hbup-profile-name{
+            font-size: .725rem;
+        }
+       .hbup-profile-xp{
+        font-size: .625rem;
+       }
+    }
+}

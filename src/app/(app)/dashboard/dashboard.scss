@@ -1,0 +1,64 @@
+@use "@/styles/abstracts/_variables.scss" as *;
+
+$stats-bg: rgba(207, 207, 207, 0.25);
+$stats-primary-text: rgba(142, 155, 186, 1);
+
+.hbup-greetings-container {
+    .hbup-greet-subheading {
+        color: rgba(133, 135, 141, 1)
+    }
+}
+
+.hbup-layout-section {
+    .hbup-stats-section {
+        &:nth-child(2) {
+            flex-grow: 1;
+        }
+
+        .hbup-streak-container {
+            background-color: $bg-secondary;
+            border: 1px solid $stats-bg;
+            padding: 1rem;
+            border-radius: .312rem;
+
+            .hbup-streak-heading {
+                color: $stats-primary-text;
+                font-size: .75rem;
+            }
+        }
+
+        .hbup-best-container {
+            .hbup-best-streakscore {
+                color: $text-yellow;
+            }
+
+            .hbup-bestoverall-heading {
+                color: $stats-primary-text;
+                font-size: .75rem;
+            }
+        }
+
+        .hbup-stats-card {
+            background-color: $stats-bg;
+            border-radius: .312rem;
+
+            .hbup-stats-info {
+                .hbup-stats-heading {
+                    color: $stats-primary-text;
+                }
+            }
+
+            .hbup-stats-icon {
+                background-color: $bg-yellow-dark;
+                border-radius: .312rem;
+            }
+        }
+    }
+
+    .hbup-task-container{
+        .hbup-task-completed{
+            color: rgba(143, 159, 184, 1);
+        }
+    }
+
+}
