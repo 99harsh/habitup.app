@@ -2,6 +2,11 @@
 
 .hbup-dashboard-header{
     background-color: $bg-secondary; 
+
+    .hbup-menu-container{
+        display: none;
+    }
+
     .hbup-notification-container{
         background-color: rgba(255, 181, 76, 0.46);
         border-radius: .312rem;
@@ -14,5 +19,19 @@
        .hbup-profile-xp{
         font-size: .625rem;
        }
+    }
+
+    @media (max-width: 481px){
+        .hbup-menu-container{
+            display: flex;
+        }
+
+        .hbup-profile-name-container{
+            display: none;
+        }
+
+        .hbup-user-crown{
+            display: none;
+        }
     }
 }

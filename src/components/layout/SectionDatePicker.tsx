@@ -24,7 +24,7 @@ export default function SectionDatePicker({subheading}: ISelectionDatePicker) {
                 </div>
             </div>
             <div className="mt-3">
-                <h3 className="font-400 font-lg m-0 text-grey">{subheading}</h3>
+                <h3 className="font-400 font-lg m-0 text-grey-dark hbup-datepicker-heading">{subheading}</h3>
             </div>
         </>
     )

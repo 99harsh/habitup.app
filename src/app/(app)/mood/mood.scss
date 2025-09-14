@@ -19,4 +19,18 @@
             max-width: 50%;
         }
     }
+
+    @media (max-width: 481px){
+        .hbup-datepicker-container{
+            justify-content: center;
+        }
+        
+        .hbup-datepicker-heading{
+            text-align: center;
+        }
+
+        .hbup-mood-section{
+            flex-direction: column;
+        }
+    }
 }

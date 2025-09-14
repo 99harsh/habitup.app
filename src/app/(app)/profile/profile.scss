@@ -1,0 +1,20 @@
+@use "@/styles/abstracts/variables.scss" as *;
+
+.hbup-profile-container{
+    .hbup-profile-progress{
+        width: 60%;
+    }
+
+    .hbup-stats{
+        color: $text-yellow;
+    }
+
+    @media (max-width: 481px){
+        .hbup-profile-section{
+            flex-direction: column;
+            .hbup-profile-details {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

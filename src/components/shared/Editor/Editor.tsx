@@ -1,25 +1,22 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useState } from "react";
-import "react-quill/dist/quill.snow.css"; // Quill theme styles
-
-// Dynamically import ReactQuill so it only loads on client
-// const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+import { useEditor, EditorContent } from "@tiptap/react";
+import StarterKit from "@tiptap/starter-kit";
+import "./Editor.scss";
 
 export default function Editor() {
   const [value, setValue] = useState("");
+  const editor = useEditor({
+    extensions: [StarterKit],
+    content: "<p>Hello World! 🌍</p>",
+    immediatelyRender: false,
+    autofocus: true,
+  });
+
+  if (!editor) return null;
 
   return (
-    <div>
-      {/* <ReactQuill
-        theme="snow"
-        value={value}
-        onChange={setValue}
-        placeholder="Start writing..."
-      /> */}
-      <p className="mt-4">Editor content (HTML):</p>
-      <pre>{value}</pre>
-    </div>
+    <EditorContent editor={editor} className="hbup-richtext-editor" />
   );
 }

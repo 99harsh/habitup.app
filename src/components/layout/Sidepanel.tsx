@@ -39,8 +39,8 @@ export default function SidePanel(){
             icon: Calendar
         },
         {
-            name: "Settings",
-            href: '/settings',
+            name: "Profile",
+            href: '/profile',
             icon: Settings
         }
        
@@ -49,19 +49,19 @@ export default function SidePanel(){
     const pathname = usePathname();
 
     return(
-        <div className="hbup-sidepanel-container px-6 pt-3">
+        <div className="hbup-sidepanel-container px-4 pt-3">
             <div className="hbup-logo-container flex align-items-center gap-3 pb-4">
                 <Image src={"/assets/logos/logo.svg"} width={40} height={40} alt="Habitup Logo"/>
                 <h1 className="hbup-appname m-0 font-xl">Habit<span className="hbup-up-heading">Up</span></h1>
             </div>
-            <div className="hbup-menu-container flex flex-col gap-3 mt-8">
+            <div className="hbup-menu-container flex flex-col gap-3 mt-4">
                 {
                     navItems.map((element, index) => {
                         const isActive = pathname.startsWith(element.href);
-                        // const Icon = element.icon;
+                        const Icon = element.icon;
                         return (
-                        <Link key={index} className={`hbup-menu-item flex align-items-center hbup-menu-name font-sm m-0 gap-3 ${isActive ? 'hbup-menu-active' : ''}`} href={element.href}>
-                            {/* <Icon height={18} width={18} className="hbup-menu-icon"/> */}
+                        <Link key={index} className={`hbup-menu-item flex align-items-center hbup-menu-name font-md m-0 gap-3 ${isActive ? 'hbup-menu-active' : ''}`} href={element.href}>
+                            <Icon height={18} width={18} className="hbup-menu-icon"/>
                             {element.name}
                         </Link>
                         )

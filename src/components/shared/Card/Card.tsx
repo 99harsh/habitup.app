@@ -7,5 +7,5 @@ type CardProps = {
 };
 
 export default function Card({ children, className }: CardProps) {
-  return <div className={`hbup-card p-3 ${className}`}>{children}</div>;
+  return <div className={`hbup-card p-4 ${className}`}>{children}</div>;
 }

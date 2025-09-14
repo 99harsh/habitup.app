@@ -1,0 +1,16 @@
+@media (max-width: 481px){
+    .hbup-calendar-section{
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    .hbup-calendar-legend{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hbup-datepicker-container{
+        justify-content: center;
+        flex: 1;
+    }
+}

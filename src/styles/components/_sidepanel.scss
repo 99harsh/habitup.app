@@ -25,4 +25,8 @@
 
         }
     }
+
+    @media (max-width: 481px) {
+        display: none;
+    }
 }

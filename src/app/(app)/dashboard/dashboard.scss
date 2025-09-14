@@ -82,3 +82,18 @@ $stats-primary-text: rgba(142, 155, 186, 1);
     }
 
 }
+
+@media (max-width: 481px){
+   .hbup-stats-container{
+    flex-direction: column;
+
+    .hbup-stats-layout{
+        flex-direction: column;
+
+        .hbup-stats-section{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+   } 
+}

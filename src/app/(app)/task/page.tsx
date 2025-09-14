@@ -13,10 +13,10 @@ export default function Task() {
     return (
         <div className="hbup-task-container">
             <div className="hbup-task-section">
-                <h3 className="m-0 font-lg text-primary">Your Task</h3>
-                <p className="m-0 font-sm text-grey">Stay organized and accomplish your goals</p>
+                <h3 className="m-0 font-xl text-primary">Your Task</h3>
+                <p className="m-0 font-md text-grey-dark">Stay organized and accomplish your goals</p>
             </div>
-            <div className="hbup-task-section flex gap-3 mt-4">
+            <div className="hbup-task-section flex gap-4 mt-4 hbup-task-card">
                 <Card className="flex-2">
                     <div className="flex gap-3 align-items-center">
                         <div className="flex-1">
@@ -29,28 +29,28 @@ export default function Task() {
                     <div className="flex flex-col gap-4 mt-4">
                         <div className="hbup-task-item flex-between">
                             <TaskList checked={true} />
-                            <button className="hbup-remove-btn">Remove</button>
+                            <button className="hbup-remove-btn font-sm">Remove</button>
                         </div>
                         <div className="hbup-task-item flex-between">
                             <TaskList checked={false} />
-                            <button className="hbup-remove-btn">Remove</button>
+                            <button className="hbup-remove-btn font-sm">Remove</button>
                         </div>
                         <div className="hbup-task-item flex-between">
                             <TaskList checked={false} />
-                            <button className="hbup-remove-btn">Remove</button>
+                            <button className="hbup-remove-btn font-sm">Remove</button>
                         </div>
                         <div className="hbup-task-item flex-between">
                             <TaskList checked={false} />
-                            <button className="hbup-remove-btn">Remove</button>
+                            <button className="hbup-remove-btn font-sm">Remove</button>
                         </div>
                     </div>
                 </Card>
                 <Card className="flex-1 flex flex-col flex-around">
                     <div className="flex align-items-center justify-content-center gap-6">
                         <div className="text-center">
-                            <h3 className="m-0 font-md">Today so far</h3>
-                            <p className="mt-4 mb-1 font-sm">1/5</p>
-                            <p className="m-0 font-sm">task remaining</p>
+                            <h3 className="m-0 font-lg">Today so far</h3>
+                            <p className="mt-4 mb-1 font-md">1/5</p>
+                            <p className="m-0 font-md">task remaining</p>
                         </div>
                         <div className="hbup-progress-container">
                             <CircularProgressbar
@@ -66,9 +66,9 @@ export default function Task() {
                     </div>
                     <div className="flex align-items-center justify-content-center gap-6 mt-4">
                         <div className="text-center">
-                            <h3 className="m-0 font-md">This week</h3>
-                            <p className="mt-4 mb-1 font-sm">1/5</p>
-                            <p className="m-0 font-sm">task remaining</p>
+                            <h3 className="m-0 font-lg">This week</h3>
+                            <p className="mt-4 mb-1 font-md">1/5</p>
+                            <p className="m-0 font-mdd">task remaining</p>
                         </div>
                         <div className="hbup-progress-container">
                             <CircularProgressbar

@@ -16,8 +16,8 @@ export default function Dashboard() {
                 <h1 className="hbup-greet-heading text-primary m-0 font-600 font-2xl">Good Morning Harsh 👋🏻</h1>
                 <h3 className="hbup-greet-subheading m-0 font-300 font-sm">Ready to reflect and grow today?</h3>
             </div>
-            <div className="hbup-layout-section flex gap-4">
-                <Card className="flex-2 flex align-items-center gap-3">
+            <div className="hbup-layout-section hbup-stats-container flex gap-4">
+                <Card className="flex-2 flex align-items-center gap-3 hbup-stats-layout">
                     <div className="hbup-stats-section flex gap-3">
                         <div className="hbup-streak-container">
                             <p className="m-0 hbup-total-streak font-3xl font-500 flex align-items-center justify-content-center">
@@ -73,7 +73,7 @@ export default function Dashboard() {
                     </div>
                 </Card>
                 <Card className="flex-1">
-                    <h3 className="hbup-layout-heading mt-0 font-md font-600">Tasks</h3>
+                    <h3 className="hbup-layout-heading mt-0 font-xl font-600">Tasks</h3>
                     <div className="hbup-tasklist-container flex flex-col gap-3">
                         <TaskList />
                         <TaskList checked={true} />
@@ -82,9 +82,9 @@ export default function Dashboard() {
                     </div>
                 </Card>
             </div>
-            <div className="hbup-layout-section flex gap-4 mt-4">
+            <div className="hbup-layout-section hbup-stats-container flex gap-4 mt-4">
                 <Card className="flex-1">
-                    <h3 className="hbup-layout-heading mt-0 font-md font-600">Leaderboard</h3>
+                    <h3 className="hbup-layout-heading mt-0 font-xl font-600">Leaderboard</h3>
                     <div className="hbup-leaderboard-container flex flex-col gap-2">
                         <LeaderboardCard />
                         <LeaderboardCard />
@@ -93,7 +93,7 @@ export default function Dashboard() {
                     </div>
                 </Card>
                 <Card className="flex-1">
-                    <h3 className="hbup-layout-heading mt-0 font-md font-600">Today's Activity</h3>
+                    <h3 className="hbup-layout-heading mt-0 font-xl font-600">Today's Activity</h3>
                     <div className="hbup-taskprogress-container flex gap-2 align-items-center">
                         <Progress progress={50} />
                         <span className="font-xs font-500">5/10</span>
@@ -123,7 +123,7 @@ export default function Dashboard() {
                     </div>
                 </Card>
                 <Card className="flex-1">
-                    <h3 className="hbup-layout-heading mt-0 font-md font-600">Calendar</h3>
+                    <h3 className="hbup-layout-heading mt-0 font-xl font-600">Calendar</h3>
                     <div className="hbup-calendar-container">
                         {/* <Calendar /> */}
                     </div>
